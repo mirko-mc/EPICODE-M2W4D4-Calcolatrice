@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>CaLcOlAtRiCe</title>
+</head>
+
+<body>
+    <div id="calcolatrice">
+        <div class="area">
+            <input type="text" name="schermo" id="schermo" value="" disabled>
+        </div>
+        <div class="area">
+            <div>
+                <input type="button" onclick="prendoDato(1)" value="1" name="1" id="1">
+                <input type="button" onclick="prendoDato(2)" value="2" name="2" id="2">
+                <input type="button" onclick="prendoDato(3)" value="3" name="3" id="3">
+                <input type="button" onclick="prendoDato('/')" value="/" name="divisione" id="divisione">
+            </div>
+            <input type="button" onclick="prendoDato(4)" value="4" name="4" id="4">
+            <input type="button" onclick="prendoDato(5)" value="5" name="5" id="5">
+            <input type="button" onclick="prendoDato(6)" value="6" name="6" id="6">
+            <input type="button" onclick="prendoDato('*')" value="*" name="moltiplicazione"
+                id="moltiplicazione">
+            <div>
+                <input type="button" onclick="prendoDato(7)" value="7" name="7" id="7">
+                <input type="button" onclick="prendoDato(8)" value="8" name="8" id="8">
+                <input type="button" onclick="prendoDato(9)" value="9" name="9" id="9">
+                <input type="button" onclick="prendoDato('-')" value="-" name="sottrazione"
+                    id="sottrazione">
+            </div>
+            <div>
+                <input type="button" onclick="cancella()" value="C" name="reset" id="reset">
+                <input type="button" onclick="prendoDato(0)" value="0" name="0" id="0">
+                <input type="button" onclick="prendoDato('.')" value="." name="virgola" id="virgola">
+                <input type="button" onclick="prendoDato('+')" value="+" name="addizione" id="addizione">
+            </div>
+            <div>
+                <input type="button" onclick="operazione('=')" value="=" name="uguale" id="uguale">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
+<!-- 
+    1 - inserimento del primo numero
+    1a - il numero deve apparire
+    2 - inserimento operazione
+    3 - inserimento secondo numero
+    3a - il numero/operazione devono apparire
+    3b - possono mettere altro numero o operazione
+    4 - click su = per visualizzare il risultato
+
+    check1 : nessun operatore se non ci sono numeri
+    check2 : ok nessun operatore ma sottrazione sì per numeri negativi
+    check3 - se inserisco operatori multipli?
+    
+    - salvare ogni dato in una variabile
+    - la variabile la assegno all'input tramite il value
+
+
+    fn prendoDato
+    fn operazione
+    fn cancella
+ -->

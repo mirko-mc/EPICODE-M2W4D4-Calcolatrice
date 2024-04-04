@@ -1,0 +1,8 @@
+body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 2rem;}
+
+#calcolatrice{
+    border: 6px solid gray;
+    border-radius: 8px;
+    
+}
